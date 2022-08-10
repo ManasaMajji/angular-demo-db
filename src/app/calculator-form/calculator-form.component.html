@@ -1,0 +1,21 @@
+<form [formGroup]="calculatorForm" id="calculatorForm">
+  <div class="form-container">
+  <div class="input-elements">
+    <label for="firstInput">First Number:</label>
+    <input type=number id='firstInput' formControlName='firstinput' class='form-control'>
+    <div class='error-msg'
+      *ngIf="!calculatorForm.get('firstinput')?.valid && calculatorForm.get('firstinput')?.touched"> Invalid first
+      number</div>
+    <br />
+    <label for="secondInput">Second Number:</label>
+    <input type=number id='secondInput' formControlName='secondinput' class='form-control'>
+    <div class='error-msg'
+      *ngIf="!calculatorForm.get('secondinput')?.valid && calculatorForm.get('secondinput')?.touched"> Invalid second
+      number</div>
+  </div>
+  <div class="result">
+    <label>Result:</label>
+    <span *ngIf="calculatorForm.valid && result"> {{result}}</span>
+  </div>
+</div>
+</form>

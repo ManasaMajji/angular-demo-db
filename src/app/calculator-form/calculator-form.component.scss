@@ -1,0 +1,31 @@
+input {
+  margin:1em;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+  }
+
+.error-msg {
+  color: red;
+  margin-bottom: 1em;
+}
+
+.form-container {
+  display: flex;
+}
+
+.input-elements {
+  flex: 1;
+}
+
+.result {
+  flex: 3;
+  align-self: center;
+}
+
+label {
+  display: inline-block;
+  width: 8em;
+}
+
