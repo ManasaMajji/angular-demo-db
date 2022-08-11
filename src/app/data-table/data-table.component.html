@@ -1,0 +1,6 @@
+<p> <strong>Note:</strong> Select a range of values in the value column to see the sum of the values of the selected range
+</p>
+<br />
+<ag-grid-angular style="width: 100%; height: 500px" class="ag-theme-alpine" [columnDefs]="columnDefs"
+  [statusBar]="statusBar" [defaultColDef]="defaultColDef" [rowData]="rowData" [enableRangeSelection]="true"
+  [animateRows]="true" (gridReady)="onGridReady($event)"></ag-grid-angular>
